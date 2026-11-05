@@ -1,10 +1,21 @@
 const grid = document.getElementById("cocktail-grid");
 document.getElementById("year").textContent = new Date().getFullYear();
 
+const revealObserver = "IntersectionObserver" in window
+  ? new IntersectionObserver((entries, observer) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add("is-visible");
+          observer.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.12 })
+  : null;
+
 cocktails.slice(0, 8).forEach((drink, index) => {
   const card = document.createElement("article");
   card.className = "cocktail-card";
-  card.style.animationDelay = `${index * 90}ms`;
+  card.style.animationDelay = `${index * 110}ms`;
 
   const imageWrap = document.createElement("div");
   imageWrap.className = "drink-image-wrap";
@@ -13,7 +24,7 @@ cocktails.slice(0, 8).forEach((drink, index) => {
   image.src = drink.image;
   image.alt = drink.name;
   image.loading = "lazy";
-  image.onerror = () => { image.src = "assets/images/cocktail-01.svg"; };
+  image.onerror = () => { image.src = "assets/images/cocktail-01.jpg"; };
   const number = document.createElement("span");
   number.className = "card-number";
   number.textContent = `0${index + 1} / 08`;
@@ -36,4 +47,6 @@ cocktails.slice(0, 8).forEach((drink, index) => {
   info.append(copy, price);
   card.append(imageWrap, info);
   grid.append(card);
+  if (revealObserver) revealObserver.observe(card);
+  else card.classList.add("is-visible");
 });
