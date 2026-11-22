@@ -13,10 +13,10 @@ const revealObserver = "IntersectionObserver" in window
   : null;
 
 const fallbackImages = [
-  "assets/images/cocktail-tipo-tinto.jpg",
-  "assets/images/cocktail-mojito.jpg",
-  "assets/images/cocktail-lime-caipirinha.jpg",
-  "assets/images/cocktail-passion-caipirinha.jpg"
+  "assets/images/cocktail-tipo-tinto.png",
+  "assets/images/cocktail-mojito.png",
+  "assets/images/cocktail-lime-caipirinha.png",
+  "assets/images/cocktail-passion-caipirinha.png"
 ];
 
 menuSections.forEach((sectionData) => {

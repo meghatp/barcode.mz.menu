@@ -16,42 +16,42 @@ const menuSections = [
         priceMT: "300 MT",
         priceZAR: "R63",
         note: "RICH · SPICED · CLASSIC",
-        image: "assets/images/cocktail-tipo-tinto.jpg"
+        image: "assets/images/cocktail-tipo-tinto.png"
       },
       {
         name: "Mojito",
         priceMT: "350 MT",
         priceZAR: "R73",
         note: "MINT · LIME · CRISP",
-        image: "assets/images/cocktail-mojito.jpg"
+        image: "assets/images/cocktail-mojito.png"
       },
       {
         name: "Lime Caipirinha",
         priceMT: "350 MT",
         priceZAR: "R73",
         note: "ZESTY · MUDDLED · BOLD",
-        image: "assets/images/cocktail-lime-caipirinha.jpg"
+        image: "assets/images/cocktail-lime-caipirinha.png"
       },
       {
         name: "Passion Fruit Caipirinha",
         priceMT: "350 MT",
         priceZAR: "R73",
         note: "TROPICAL · TANGY · VIBRANT",
-        image: "assets/images/cocktail-passion-caipirinha.jpg"
+        image: "assets/images/cocktail-passion-caipirinha.png"
       },
       {
         name: "Piña Colada",
         priceMT: "400 MT",
         priceZAR: "R83",
         note: "COCONUT · PINEAPPLE · SILKY",
-        image: "assets/images/cocktail-pina-colada.jpg"
+        image: "assets/images/cocktail-pina-colada.png"
       },
       {
         name: "Sex on the Beach",
         priceMT: "400 MT",
         priceZAR: "R83",
         note: "FRUITY · SUNSET · REFRESHING",
-        image: "assets/images/cocktail-sex-on-the-beach.jpg"
+        image: "assets/images/cocktail-sex-on-the-beach.png"
       }
     ]
   },
@@ -68,21 +68,21 @@ const menuSections = [
         priceMT: "250 MT",
         priceZAR: "R52",
         note: "CITRUS · HERBAL · CLEAN",
-        image: "assets/images/mocktail-fresh-code.jpg"
+        image: "assets/images/mocktail-fresh-code.png"
       },
       {
         name: "Tropical Zero",
         priceMT: "250 MT",
         priceZAR: "R52",
         note: "EXOTIC · JUICY · BRIGHT",
-        image: "assets/images/mocktail-tropical-zero.jpg"
+        image: "assets/images/mocktail-tropical-zero.png"
       },
       {
         name: "Passion Zero",
         priceMT: "250 MT",
         priceZAR: "R52",
         note: "PASSION FRUIT · SPARKLING · ZESTY",
-        image: "assets/images/mocktail-passion-zero.jpg"
+        image: "assets/images/mocktail-passion-zero.png"
       }
     ]
   },
